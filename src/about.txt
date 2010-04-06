@@ -1,0 +1,66 @@
+About ShowTree
+
+ShowTree was written by Yuvi Masory, then a computer science 
+student at the University of Pennsylvania, as part of his senior project
+ on tree visualization in 2009.
+ 
+Project page: https://sourceforge.net/projects/showtree/
+
+Entering "0" for arity allows trees of unbounded degree.
+
+Any code I have written is (C) Yuvi Masory 2009, and released under
+the GNU General Public License (version 3 only). See license.txt for
+more information. See below for the licenses of borrowed code.
+
+The following code is borrowed:
+
+A1] Image saving files are borrowed from Donald Derrick's excellent 
+GPL (v2+) TreeForm Syntax Drawing Software. His code was also valuable
+for debugging the W_BJL06 implementation. For more information visit:
+http://www.ece.ubc.ca/~donaldd/treeform.htm
+
+A2] Code for opening saved trees uses PDTB API (Common Public 
+License) For more information visit:
+http://www.seas.upenn.edu/~pdtb/PDTBAPI/
+
+A3] Code for locking the size of a JFrame by two users on the Sun 
+Developer Forums:
+http://forum.java.sun.com/thread.jspa?threadID=328852&messageID=1983147
+
+The following algorithms are implemented: 
+
+B1] Knuth71
+D.E. Knuth. Optimum binary search trees. Acta Informatica, 
+1(1):14-25, 1971.
+
+B2] WS79 Narrowest & WS79 Tidy
+C.Wetherell and A. Shannon. Tidy drawings of trees. IEEE Transactions
+on Software Engineering, 7(2):223-228, 1979
+WS79 Centered follows pseudocode of [C1]
+
+B3] Sweet78
+Appendix B from:
+R.E. Sweet. Empirical estimates of program entropy. PhD thesis, Stanford
+ University, 1977.
+Follows pseudocode of [C1]
+
+B4] Vaucher80
+J.G. Vaucher. Pretty-printing of trees. Software: Practice and Experience,
+ 10(7):553�561, 1980.
+Follows pseudocode of [C1]
+
+B5] W_BJL06
+J.Q. Walker II. A node-psoitioning algorithm for general trees. Software: 
+Practice and Experience, 20(7):685�705, 1990.
+Then modified by:
+C. Buchheim, M. Junger, and S. Leipert. Drawing rooted trees in linear 
+time. Software: Practice and Experience, 36(6):651�665, 2006.
+
+Other references:
+
+[C1]
+J.S. Tilford. Tree drawing algorithms. Master�s thesis, University of 
+Illinois at Urbana-Champaign, 1981.
+
+Be warned, there are errors in the pseudocode of some of the references
+above.
