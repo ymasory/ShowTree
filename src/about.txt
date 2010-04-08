@@ -4,7 +4,7 @@ ShowTree was written by Yuvi Masory, then a computer science
 student at the University of Pennsylvania, as part of his senior project
  on tree visualization in 2009.
  
-Project page: https://sourceforge.net/projects/showtree/
+Project page: http://github.com/ymasory/ShowTree
 
 Entering "0" for arity allows trees of unbounded degree.
 
