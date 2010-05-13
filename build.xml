@@ -1,0 +1,36 @@
+<project default="package_jar" name="ShowTree">
+  <target name="package_jar">
+    <delete dir="dist" failonerror="false" quiet="true"/>
+    <delete dir="tmp" failonerror="false" quiet="true"/>
+    <delete dir="classes" failonerror="false" quiet="true"/>
+    <mkdir dir="dist"/>
+    <mkdir dir="tmp"/>
+    <mkdir dir="classes"/>
+
+    <javac target="1.5" srcdir="src" destdir="classes">
+      <classpath>
+        <fileset dir="lib">
+          <include name="**/*.jar" />
+        </fileset>
+      </classpath>
+    </javac>
+
+    <unzip dest="tmp">
+      <fileset dir="lib">
+        <include name="**/*.jar"/>
+      </fileset>
+    </unzip>
+
+    <jar destfile="dist/ShowTree.jar" filesetmanifest="skip">
+      <manifest>
+        <attribute name="Main-Class" value="display/Start"/>
+        <attribute name="Class-Path" value="."/>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Implementation-Title" value="ShowTree"/>
+      </manifest>
+      <fileset dir="tmp"/>
+      <fileset dir="classes"/>
+      <fileset dir="resources"/>
+    </jar>
+  </target>
+</project>
