@@ -21,7 +21,7 @@
       </fileset>
     </unzip>
 
-    <jar destfile="dist/ShowTree.jar" filesetmanifest="skip">
+    <jar destfile="dist/ShowTree.jar" filesetmanifest="merge">
       <manifest>
         <attribute name="Main-Class" value="display/Start"/>
         <attribute name="Class-Path" value="."/>
