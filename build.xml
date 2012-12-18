@@ -7,7 +7,7 @@
     <mkdir dir="tmp"/>
     <mkdir dir="classes"/>
 
-    <javac target="1.5" srcdir="src" destdir="classes">
+    <javac srcdir="src" destdir="classes" includeantruntime="false">
       <classpath>
         <fileset dir="lib">
           <include name="**/*.jar" />
